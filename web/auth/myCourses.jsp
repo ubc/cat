@@ -24,17 +24,23 @@
 <jsp:include page="/header.jsp"/>
 		<div id="content-and-context" style="overflow:auto;">
 			<div class="wrapper" style="overflow:auto;"> 
+				<ul class="breadcrumb">
+					<li>
+						<a href="/cat">Curriculum Alignment Tool</a>
+						<span class="divider">/</span>
+					</li>
+					<li class="active">
+						My Courses
+					</li>
+				</ul>  
 				<div id="content" style="overflow:auto;"> 
-					<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> 
-						&gt; <a href="/cat">Curriculum Alignment Tool</a> &gt; My Courses </p></div>  
 	
 					
 					<div id="administration" class="module" style="overflow:auto;">
 					
 					
 <br/>
-Welcome to the Gwenna Moss Centre for Teaching Effectiveness course information tool designed to assist academic units at the 
-University of Saskatchewan with curriculum mapping and, ultimately, with curriculum innovation processes.<br/>
+The Curriculum Alignment Tool is designed to assist academic units with curriculum mapping and, ultimately, with curriculum innovation processes.<br/>
 To select a course, scroll to the bottom to see a list of the courses you have taught.
 
 <h4><i>What is curriculum mapping?</i></h4>

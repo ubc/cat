@@ -11,17 +11,6 @@ font-size: 100%; text-align: left;
 color: #000;
 background: white;
 }
-a {
-color: #238800; /*318a12*/
-text-decoration: none;
-}
-a:hover {
-color: #53aa17; /*318a12*/
-text-decoration: underline;
-}
-a:active, a:focus {
-outline: 0;
-}
 img {
 border: none;
 }
