@@ -73,10 +73,17 @@ else
 		<meta content="IE=9" http-equiv="X-UA-Compatible"/>
         <meta content="IE=8" http-equiv="X-UA-Compatible"/>
  
+		<!-- UBC CLF Include -->
+		<link href="//cdn.ubc.ca/clf/7.0.4/css/ubc-clf-full.min.css" rel="stylesheet" />
+		<!-- UBC CLF quick & dirty fix for unit bar bg color -->
+		<style type="text/css">
+		#ubc7-unit {
+			background: #2F5D7C;
+		}
+		</style>
  
- 
-    	<link href="http://www.usask.ca/favicon.ico" rel="apple-touch-icon"/>
-    	<link href="http://www.usask.ca/favicon.ico" rel="shortcut icon"/>
+    	<link href="//cdn.ubc.ca/clf/7.0.4/img/favicon.ico" rel="apple-touch-icon"/>
+    	<link href="//cdn.ubc.ca/clf/7.0.4/img/favicon.ico" rel="shortcut icon"/>
     	<link href="/cat/resources/default.css" media="screen" rel="stylesheet" type="text/css"/>
  	   	<link href="/cat/resources/print.css" media="print" rel="stylesheet" type="text/css"/>
  		<!--<script src="/cat/resources/scriptaculous.js" type="text/javascript"></script> -->
@@ -85,6 +92,8 @@ else
 		<!-- <script src="/cat/resources/ui.js" type="text/javascript"></script> -->
 		<link href="/cat/standard.css" rel="stylesheet" type="text/css"/>
 		<script src="/cat/included/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<!-- UBC CLF Include -->
+		<script src="//cdn.ubc.ca/clf/7.0.4/js/ubc-clf.min.js"></script>
 	
 		<script  type="text/javascript">
 		var clientBrowser = '<%=clientBrowser%>';
@@ -154,63 +163,123 @@ clicked.filter(current).length)
 		<script src="/cat/js/offering_lib.js" type="text/javascript"></script>
 		
 	</head>
-	<body>
-		<div id="header">
-			<div class="wrapper">
-				<p id="uofs">
-					<a href="http://www.usask.ca/" title="University of Saskatchewan">
-						<img alt="University of Saskatchewan" src="/cat/resources/uofs-logo.png"/>
+	<body class="full-width">
+
+	<!-- UBC Global Utility Menu -->
+	<div class="collapse expand" id="ubc7-global-menu">
+		<div id="ubc7-search" class="expand">
+			<div id="ubc7-search-box">
+				<form class="form-search" method="get" action="http://www.ubc.ca/search/refine/" role="search">
+					<input type="text" name="q" placeholder="Search E-Learning @ UBC" class="input-xlarge search-query">
+					<input type="hidden" name="label" value="Search E-Learning @ UBC" />
+					<input type="hidden" name="site" value="*.elearning.ubc.ca" />
+					<button type="submit" class="btn">Search</button>
+				</form>
+			</div>
+		</div>
+		<div id="ubc7-global-header" class="expand">
+			<!-- Global Utility Header from CDN -->
+		</div>
+	</div>
+	<!-- End of UBC Global Utility Menu -->
+	<!-- UBC Header -->
+	<header id="ubc7-header" class="row-fluid expand" role="banner">
+	<div class="container">
+		<div class="span1">
+			<div id="ubc7-logo">
+				<a href="http://www.ubc.ca" title="The University of British Columbia (UBC)">The University of British Columbia</a>
+			</div>
+		</div>
+		<div class="span2">
+			<div id="ubc7-apom">
+				<a href="//cdn.ubc.ca/clf/ref/aplaceofmind" title="UBC a place of mind">UBC - A Place of Mind</a>                        
+			</div>
+		</div>
+		<div class="span9" id="ubc7-wordmark-block">
+			<div id="ubc7-wordmark">
+				<a href="http://www.ubc.ca" title="The University of British Columbia (UBC)">The University of British Columbia</a>
+			</div>
+			<div id="ubc7-global-utility">
+				<button type="button" data-toggle="collapse" data-target="#ubc7-global-menu"><span>UBC Search</span></button>
+				<noscript><a id="ubc7-global-utility-no-script" href="http://www.ubc.ca/" title="UBC Search">UBC Search</a></noscript>
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- End of UBC Header -->
+	<!-- Start of UBC Unit Name -->
+	<div id="ubc7-unit" class="row-fluid expand">
+		<div class="container">
+			<div class="span12">
+				<!-- Mobile Menu Icon -->
+				<div class="navbar">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target="#ubc7-unit-navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</a>
-				</p>
-				<ul id="secondary-nav">
-					<li class="paws-login"><a href="http://paws.usask.ca/">PAWS</a></li>
-				</ul>
-				<div id="search-options">
-					<form action="http://www.usask.ca/search/" id="cse-search-box"><fieldset><legend class="hidden">Search</legend>
-						<label class="hidden" for="q">Search:</label>
-						<input class="search-box" id="q" name="q" size="20" type="text"/>
-						<button class="submit" type="submit">Search</button></fieldset>
-					</form>
 				</div>
-				<h1 id="site-name"><a href="index.jsp">Curriculum Alignment Tool</a></h1> 
-				<div style="float:right;position:relative;top:-40px;left:-5px;" id="loginStatus"><jsp:include page="/login.jsp"> <jsp:param name="url" value="<%=request.getRequestURI() + parameters.toString()%>"/></jsp:include></div>
+				<!-- Read more about Unit Name Treatment on http://brand.ubc.ca/clf -->
+				<!-- No Faculty Treatment --><!--<div id="ubc7-unit-name" class="ubc7-single-element"> -->
+				<div id="ubc7-unit-name">
+					<a href="/" title="Curriculum Alignment Tool">
+						<span id="ubc7-unit-faculty">Centre for Teaching, Learning and Technology</span>
+						<span id="ubc7-unit-identifier">Curriculum Alignment Tool</span>
+					</a>
+				</div>
 			</div>
 		</div>
-		<div id="global-nav">
-		  	<div class="wrapper">
-		  		<ul >
-		  			<li><a href="/cat/auth/myCourses.jsp">My Courses</a></li>
-		  			<%if(organizations!=null && !organizations.isEmpty()){ 
-		  				%>
-		  				<li class="drop-down-menu"><a href="#">Characteristics Admin</a>
-		  					<ul style="display: none;" class="submenu">
-		  					<%
-		  					for(Organization organization:organizations){%>
-		  						<li><a href="javascript:loadModify('/cat/auth/courseOffering/organization.jsp?organization_id=<%=organization.getId()%>');"><%=organization.getName()%></a></li> 
-		  					<%}
-		  					%>
-		  					</ul>
-		  				</li>
-		  				<%}%>
-		  			<li><a href="/cat/organizationsWrapper.jsp">Program Admin</a></li>
-		  			<%if(sysadmin){%>
-		  			<li><a href="/cat/auth/modifySystem/admin.jsp">System Admin</a></li>
-		  			<%} %>
-		  			
-		  			
-				</ul>
-			</div>
+	</div>
+	<!-- End of UBC Unit Name -->
+
+	<!-- Navbar -->
+	<div id="ubc7-unit-menu" class="navbar expand" role="navigation">
+		<div class="navbar-inner expand">
+		<div class="container">
+		<div class="nav-collapse collapse" id="ubc7-unit-navigation">
+		<ul class="nav">
+			<li><a href="/cat/auth/myCourses.jsp">My Courses</a></li>
+			<%if(organizations!=null && !organizations.isEmpty()){ 
+				%>
+				<li class="dropdown">
+					<div class="btn-group">
+						<a class="btn" href="#">Characteristics Admin</a>
+						<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="ubc7-arrow blue down-arrow"></span></button>
+						<ul class="dropdown-menu">
+						<%
+						for(Organization organization:organizations){%>
+							<li><a href="javascript:loadModify('/cat/auth/courseOffering/organization.jsp?organization_id=<%=organization.getId()%>');"><%=organization.getName()%></a></li> 
+						<%}
+						%>
+						</ul>
+					</div>
+				</li>
+				<%}%>
+			<li><a href="/cat/organizationsWrapper.jsp">Program Admin</a></li>
+			<%if(sysadmin){%>
+			<li><a href="/cat/auth/modifySystem/admin.jsp">System Admin</a></li>
+			<%} %>
+		</ul>
+		<!-- No bootstrap .pull-right since default.css sets width on it -->
+		<p class="nav navbar-text" style="float: right;">
+			<jsp:include page="/login.jsp"> <jsp:param name="url" value="<%=request.getRequestURI() + parameters.toString()%>"/></jsp:include>
+		</p>
+		</div><!-- /.nav-collapse -->
 		</div>
-		<div  class="headerBar" id="closeLinkDiv"><a href="javascript:closeEdit();" id="closeLink" >Close <img src="/cat/images/closer.png" style="padding-right:5px;padding-top:5px;"/></a></div>
-		
-		<div class="editFloat" id="outerEditDiv">
-			
-			<div id="editDiv" >
-			
-			</div>
-			<!-- <div  class="footerBar"><a href="javascript:closeEdit();" id="closeLink2" >Close <img src="/cat/images/closer.png" style="padding-right:5px;padding-bottom:0px;"/></a></div> -->
-		
-		</div>
-		<div class="disableEverything" id="disableDiv"></div>
-		
+		</div><!-- /navbar-inner -->
+	</div><!-- /navbar -->
+
+	<!-- Don't know what these do, so leaving them alone '-->
+	<div  class="headerBar" id="closeLinkDiv"><a href="javascript:closeEdit();" id="closeLink" >Close <img src="/cat/images/closer.png" style="padding-right:5px;padding-top:5px;"/></a></div>
 	
+	<div class="editFloat" id="outerEditDiv">
+		
+		<div id="editDiv" >
+		
+		</div>
+		<!-- <div  class="footerBar"><a href="javascript:closeEdit();" id="closeLink2" >Close <img src="/cat/images/closer.png" style="padding-right:5px;padding-bottom:0px;"/></a></div> -->
+	
+	</div>
+	<div class="disableEverything" id="disableDiv"></div>
+
+	<!-- CONTENT -->

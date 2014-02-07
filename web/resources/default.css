@@ -9,9 +9,7 @@ body {
 min-width: 970px;
 font-size: 100%; text-align: left;
 color: #000;
-background: #f1f1f1;
-background: -moz-linear-gradient(bottom, #f1f1f1 0%, #fff 120%) fixed no-repeat;
-background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #f1f1f1), color-stop(120%, #fff)) fixed no-repeat;
+background: white;
 }
 a {
 color: #238800; /*318a12*/
@@ -438,9 +436,6 @@ z-index: 1;
 padding-top: 20px;
 padding-bottom: 20px;
 background: #fff /*url('../img/footer-squares.png') no-repeat right bottom*/;
--moz-box-shadow: 0 0 3px rgba(0,0,0,0.3);
--webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
-box-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
 
 #context {

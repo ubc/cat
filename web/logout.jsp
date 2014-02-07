@@ -36,5 +36,5 @@ session.removeAttribute("JSESSIONID");
 <script  type="text/javascript">
 //setTimeout("window.opener.parent.updateLoginStatusAfterlogout();",2000);
 window.opener.parent.updateLoginStatusAfterlogout();
-document.location="https://cas.usask.ca/cas/logout;"
+document.location="https://cas.stg.id.ubc.ca/ubc-cas/logout;"
 </script>
