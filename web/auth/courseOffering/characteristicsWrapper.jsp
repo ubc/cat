@@ -56,9 +56,16 @@ function drawGraphs()
 </script>
 		<div id="content-and-context" style="overflow:auto;">
 			<div class="wrapper" style="overflow:auto;"> 
+				<ul class="breadcrumb">
+					<li>
+						<a href="/cat">Curriculum Alignment Tool</a>
+						<span class="divider">/</span>
+					</li>
+					<li class="active">
+						<%=programLink%> CourseOffering characteristics</p>
+					</li>
+				</ul>
 				<div id="content" style="overflow:auto;"> 
-					<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> &gt; 
-						<a href="/cat">Curriculum Alignment Tool</a> &gt; <%=programLink%> CourseOffering characteristics</p></div>  
 					<div id="CourseOfferingCharacteristicsDiv" class="module" style="overflow:auto;">
 						<jsp:include page="characteristics.jsp"/>
 					</div>

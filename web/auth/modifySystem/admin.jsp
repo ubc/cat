@@ -33,10 +33,16 @@
 <jsp:include page="/header.jsp"/>
 		<div id="content-and-context" style="overflow:auto;">
 			<div class="wrapper" style="overflow:auto;"> 
+				<ul class="breadcrumb">
+					<li>
+						<a href="/cat">Curriculum Alignment Tool</a>
+						<span class="divider">/</span>
+					</li>
+					<li class="active">
+						System Admin
+					</li>
+				</ul>  
 				<div id="content" style="overflow:auto;"> 
-					<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> 
-						&gt; <a href="/cat">Curriculum Alignment Tool</a> &gt; System Admin </p></div>  
-
 					<div id="administration" class="module" style="overflow:auto;">
 						<a href="javascript:toggleDisplay('organizationEditSection','<%=clientBrowser%>');"><img src="/cat/images/closed_folder_<%=clientBrowser%>.gif" id="organizationEditSection_img">Edit/Add Organizations</a>
 						<div id="organizationEditSection_div" style="display:none;">

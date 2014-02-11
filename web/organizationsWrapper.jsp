@@ -22,8 +22,16 @@
 <jsp:include page="header.jsp"/>
 		<div id="content-and-context" style="overflow:auto;">
 			<div class="wrapper" style="overflow:auto;"> 
+				<ul class="breadcrumb">
+					<li>
+						<a href="/cat">Curriculum Alignment Tool</a>
+						<span class="divider">/</span>
+					</li>
+					<li class="active">
+						Program Admin
+					</li>
+				</ul>
 				<div id="content" style="overflow:auto;"> 
-					<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> &gt; Curriculum Alignment Tool</p></div>  
 					<div id="allOrganizations" class="module" style="overflow:auto;"><h1>Organizations and their Programs</h1>
 						<jsp:include page="organizations.jsp"/>
 					</div>

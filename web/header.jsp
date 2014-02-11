@@ -75,10 +75,15 @@ else
  
 		<!-- UBC CLF Include -->
 		<link href="//cdn.ubc.ca/clf/7.0.4/css/ubc-clf-full.min.css" rel="stylesheet" />
-		<!-- UBC CLF quick & dirty fix for unit bar bg color -->
+		<!-- UBC CLF overrides -->
 		<style type="text/css">
+		/* give UBC CLF unit bar bg color */
 		#ubc7-unit {
 			background: #2F5D7C;
+		}
+		/* labels do not need bg color, makes sys admin popups look weird */
+		.label {
+			background: transparent;
 		}
 		</style>
  

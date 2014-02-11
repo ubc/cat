@@ -40,8 +40,10 @@ if(programIdParameter > -1)
 if(!HTMLTools.isValid(programId))
 {
 	%>
-<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> &gt; 
-		<a href="/cat">Curriculum Mapping</a> &gt; <a href="/cat/auth/myCourses.jsp">My Courses</a> &gt; 
+<!-- Leaving original breadcrumb since UBC CLF breadcrumb requires it to be
+outside of the content div to avoid CAT CSS conflicts -->
+<div id="breadcrumbs"><p>
+		<a href="/cat">Curriculum Mapping</a> &gt; <a href="/cat/auth/myCourses.jsp">My Courses</a>
 </div>  
 <%
 }
@@ -55,7 +57,7 @@ else
 	%>
 
 			
-						<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> &gt; 
+						<div id="breadcrumbs"><p> 
 							<a href="/cat">Curriculum Alignment Tool</a> &gt; <%=programLink%> CourseOffering characteristics</p></div>  
 						<div id="CourseOfferingCharacteristicsDiv" class="module" style="overflow:auto;">
 	<%

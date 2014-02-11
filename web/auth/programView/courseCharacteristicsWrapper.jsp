@@ -27,8 +27,20 @@ Program p = ProgramManager.instance().getProgramById(Integer.parseInt(programId)
 
 		<div id="content-and-context" style="overflow:auto;">
 			<div class="wrapper" style="overflow:auto;"> 
+				<ul class="breadcrumb">
+					<li>
+						<a href="/cat">Curriculum Alignment Tool</a>
+						<span class="divider">/</span>
+					</li>
+					<li>
+						<a href="/cat/auth/programView/programWrapper.jsp?program_id=<%=p.getId()%>"><%=p.getName()%></a>
+						<span class="divider">/</span>
+					</li>
+					<li class="active">
+						CourseOffering characteristics
+					</li>
+				</ul>  
 				<div id="content" style="overflow:auto;"> 
-					<div id="breadcrumbs"><p><a href="http://www.usask.ca/gmcte/">The Gwenna Moss Centre for Teaching Effectiveness</a> &gt; <a href="/cat">Curriculum Alignment Tool</a> &gt; <a href="/cat/auth/programView/programWrapper.jsp?program_id=<%=p.getId()%>"><%=p.getName()%></a> &gt; CourseOffering characteristics</p></div>  
 					<div id="CourseCharacteristicsDiv" class="module" style="overflow:auto;">
 						<jsp:include page="courseCharacteristics.jsp"/>
 					</div>

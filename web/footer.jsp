@@ -23,8 +23,10 @@
         <div class="row-fluid expand" id="ubc7-unit-footer">
         	<div class="container">
 	            <div class="span12" id="ubc7-unit-address">
-					<p>
-					The <a href="http://www.usask.ca/gmcte/services/curriculumdevelopment/CAT">Curriculum Alignment Tool</a> is developed by the <a href="http://www.usask.ca/gmcte/">Gwenna Moss Centre for Teaching Effectiveness</a> at the <a href="http://www.usask.ca">University of Saskatchewan</a>. They've generously made CAT an open source project available <a href="https://github.com/usaskulc/cat">here on Github</a>. UBC's customizations is likewise <a href="https://github.com/ubc/cat">available on Github</a>.
+					<p class="muted">
+					<small>
+					The <a href="http://www.usask.ca/gmcte/services/curriculumdevelopment/CAT">Curriculum Alignment Tool</a> is developed by the Gwenna Moss Centre for Teaching Effectiveness at the University of Saskatchewan. They've generously made CAT an open source project available <a href="https://github.com/usaskulc/cat">here on Github</a>. UBC's customizations is likewise <a href="https://github.com/ubc/cat">available on Github</a>.
+					</small>
 					</p>
 	            </div>
 			</div>
