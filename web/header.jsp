@@ -84,6 +84,7 @@ else
 		/* labels do not need bg color, makes sys admin popups look weird */
 		.label {
 			background: transparent;
+			color: black;
 		}
 		</style>
  
